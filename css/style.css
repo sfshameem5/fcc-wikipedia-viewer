@@ -1,0 +1,101 @@
+/**********
+Universal Styles
+***********/
+
+* {
+	box-sizing: border-box;
+	font-family: "Roboto", sans-serif;
+}
+
+body {
+	background: tomato;
+}
+
+/**********
+Main Styles
+***********/
+
+main {
+	display: flex;
+	flex-direction: column;
+}
+
+a:visited,
+a:link,
+a {
+	text-decoration: none;
+	color: #fff;
+}
+
+/**********
+Main > Visible Div
+***********/
+
+.visible {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+
+.visible #random,
+.visible #search_box {
+	margin: 20px 0;
+	
+} 
+
+.visible input {
+	width: 200px;
+}
+
+.search_box {
+	/*margin: 30px 0;*/
+	position: fixed;
+	top: 10vh;
+}
+
+.generated{
+	padding-top: 10vh;
+}
+
+/**********
+Visible Div -> Search Box
+***********/
+
+.search_box {
+	display: flex;
+}
+
+.search_box button,
+.search_box input {
+	outline: none;
+	border-color: transparent;
+	padding: 10px;
+}
+
+.search_box button {
+	border-top-right-radius: 33px;
+	border-bottom-right-radius: 33px;
+	cursor: pointer;
+}
+
+.search_box input {
+	border-top-left-radius: 33px;
+	border-bottom-left-radius: 33px;
+}
+
+.search_box input[type="search"]::-webkit-search-cancel-button {
+	display: none;
+}
+
+/**********
+Main > Generated Content
+***********/
+
+.generated > div {
+	color: #E1F5FE;
+	background: #01579B;
+	margin: 10px;
+	padding: 5px;
+	cursor: pointer;
+}
